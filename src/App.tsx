@@ -180,7 +180,7 @@ function App() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="responsive-title font-bold text-white mb-4 tracking-wider font-syncopate px-4 break-words"
           >
-            IMPULSIONE SUA MARCA
+            LEVE SUA MARCA PARA O PRÓXIMO NÍVEL
           </motion.h1>
 
           <motion.p
