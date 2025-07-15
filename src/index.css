@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  
+  body.menu-open {
+    @apply overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 10px rgba(107, 44, 132, 0.5);
+  }
+  
+  .responsive-title {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+    line-height: 1.2;
+    word-break: break-word;
+  }
+}
+
+.moving-words {
+  display: flex;
+  gap: 6rem;
+  animation: scrollWords 45s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes scrollWords {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.bg-responsive {
+  @apply bg-cover bg-center bg-no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .bg-responsive {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-open {
+    @apply overflow-hidden;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-brand-gradient;
+}
+
+.gradient-border {
+  @apply border border-brand-purple/10 hover:border-brand-purple/30;
+}
+
+.gradient-button {
+  @apply bg-gradient-to-r from-[#6b2c84] via-[#98356b] to-[#ec6429] text-white hover:opacity-90 transition-all shadow-lg shadow-brand-purple/20;
+}
+
+.gradient-icon {
+  @apply text-brand-purple;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-br from-white/10 via-white/5 to-transparent;
+}
+
+.gradient-badge {
+  @apply bg-black/30 backdrop-blur-sm rounded-full border border-brand-purple/10;
+}
+
+/* Dropdown menu styles */
+.dropdown .submenu {
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown:hover .submenu {
+  transform: translateY(0);
+}
