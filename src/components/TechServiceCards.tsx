@@ -14,10 +14,10 @@ const TechServiceCards = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-syncopate mb-6">
-            Soluções Tecnológicas Avançadas
+            Tecnologia que Faz a Diferença
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Transforme seu negócio com nossas soluções tecnológicas inovadoras e personalizadas.
+            Chega de ficar para trás enquanto seus concorrentes sobem de nível.
           </p>
         </motion.div>
 
@@ -32,7 +32,7 @@ const TechServiceCards = () => {
           >
             {/* Glow Effect */}
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#6b2c84]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
+
             {/* Animated Gears */}
             <div className="relative mb-6 h-20 flex items-center justify-center overflow-hidden">
               <motion.div
@@ -59,12 +59,11 @@ const TechServiceCards = () => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-syncopate mb-4 text-white group-hover:text-[#6b2c84] transition-colors duration-300">
-              Process Automation
+              Automação de processos
             </h3>
-            
+
             <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
-              Automatize processos repetitivos e libere sua equipe para focar em atividades estratégicas. 
-              Sistemas inteligentes que aumentam a eficiência e reduzem erros operacionais.
+              Pare de perder tempo com tarefas chatas. Nossa automação cuida do trabalho repetitivo enquanto sua equipe foca no que realmente gera dinheiro. Menos erro humano, mais eficiência.
             </p>
 
             {/* Animated Background Elements */}
@@ -87,7 +86,7 @@ const TechServiceCards = () => {
           >
             {/* Glow Effect */}
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#6b2c84]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
+
             {/* Animated Chart Elements */}
             <div className="relative mb-6 h-20 flex items-center justify-center">
               <div className="relative w-16 h-16">
@@ -107,7 +106,7 @@ const TechServiceCards = () => {
                     style={{ left: `${index * 12}px`, bottom: 0 }}
                   />
                 ))}
-                
+
                 {/* Map Pin */}
                 <motion.div
                   animate={{ y: [-2, 2, -2] }}
@@ -116,7 +115,7 @@ const TechServiceCards = () => {
                 >
                   <MapPin className="w-6 h-6 text-[#6b2c84]" />
                 </motion.div>
-                
+
                 {/* Trending Arrow */}
                 <motion.div
                   animate={{ scale: [1, 1.2, 1] }}
@@ -129,12 +128,11 @@ const TechServiceCards = () => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-syncopate mb-4 text-white group-hover:text-[#6b2c84] transition-colors duration-300">
-              Digital Positioning
+              Geração de demanda
             </h3>
-            
+
             <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
-              Posicione sua marca estrategicamente no ambiente digital. SEO avançado, marketing de conteúdo 
-              e estratégias de visibilidade que colocam seu negócio no topo dos resultados.
+              Seja encontrado por quem importa. Gestão de tráfego pago que colocam seu negócio na frente da concorrência quando seus clientes estão procurando.
             </p>
 
             {/* Animated Background Elements */}
@@ -157,7 +155,7 @@ const TechServiceCards = () => {
           >
             {/* Glow Effect */}
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#6b2c84]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
+
             {/* Animated Code Elements */}
             <div className="relative mb-6 h-20 flex items-center justify-center">
               <div className="relative">
@@ -168,7 +166,7 @@ const TechServiceCards = () => {
                 >
                   <Code className="w-12 h-12 text-[#6b2c84]" />
                 </motion.div>
-                
+
                 {/* Mobile Device */}
                 <motion.div
                   animate={{ x: [0, 10, 0] }}
@@ -177,7 +175,7 @@ const TechServiceCards = () => {
                 >
                   <Smartphone className="w-8 h-8 text-[#6b2c84]/60" />
                 </motion.div>
-                
+
                 {/* Code Lines Animation */}
                 <div className="absolute -bottom-4 -left-6 space-y-1">
                   {[1, 2, 3].map((line, index) => (
@@ -199,18 +197,17 @@ const TechServiceCards = () => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-syncopate mb-4 text-white group-hover:text-[#6b2c84] transition-colors duration-300">
-              Web & Mobile Development
+              Desenvolvimento de apps e sites
             </h3>
-            
+
             <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
-              Desenvolvimento de websites e aplicações modernas, responsivas e de alta performance. 
-              Soluções tecnológicas sob medida que impulsionam seu negócio no ambiente digital.
+              Sites e apps que não só ficam bonitos, mas vendem. Responsivos, rápidos e feitos sob medida para converter visitantes em clientes fiéis.
             </p>
 
             {/* Animated Background Elements */}
             <div className="absolute bottom-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
               <motion.div
-                animate={{ 
+                animate={{
                   scale: [1, 1.2, 1],
                   rotate: [0, 180, 360]
                 }}

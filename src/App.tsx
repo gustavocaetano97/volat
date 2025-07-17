@@ -14,21 +14,21 @@ function App() {
   const processCards = [
     {
       title: "Diagnóstico",
-      description: "Nós mergulhamos fundo em suas necessidades, explorando ideias e definindo estratégias para sucesso a longo prazo.",
+      description: "Primeiro, a gente escuta. Mergulhamos no seu negócio para entender onde você quer chegar e quais são os obstáculos no caminho. Cada estratégia nasce dessa conversa honesta.",
       icon: LineChart,
       showDashboard: true,
       animationType: 'analytics',
     },
     {
       title: "Desenvolvimento",
-      description: "Nós criamos soluções personalizadas para seus objetivos e as testamos rigorosamente para confiabilidade de alto nível.",
+      description: "Aqui é onde a mágica acontece. Criamos soluções que fazem sentido para o SEU negócio - não para qualquer empresa. Testamos tudo antes de entregar porque sua reputação vale mais que nossa pressa.",
       icon: Code,
       showDashboard: true,
       animationType: 'development',
     },
     {
       title: "Manutenção",
-      description: "Nós implementamos sua solução perfeitamente e garantimos seu desempenho com cuidado contínuo.",
+      description: "Lançar é só o começo. Acompanhamos cada passo, ajustamos o que precisa e garantimos que sua solução continue entregando resultados mês após mês.",
       icon: Rocket,
       showDashboard: true,
       animationType: 'maintenance',
@@ -38,7 +38,7 @@ function App() {
   const serviceCards = [
     {
       title: "Otimização de Processos",
-      description: "Trabalhe com nossos especialistas para desenvolver estratégias de vendas personalizadas que simplifiquem as operações e forneçam resultados impactantes.",
+      description: "Nossos especialistas trabalham lado a lado com você para criar estratégias de vendas que realmente simplificam sua operação. Resultado? Mais vendas com menos dor de cabeça.",
       icon: Users,
       size: "wide",
       showDashboard: true,
@@ -47,7 +47,7 @@ function App() {
     },
     {
       title: "Geração de Demanda e Previsibilidade",
-      description: "Potencialize seu processo de vendas atraindo pessoas realmente interessadas por meio de tráfego pago e remarketing estruturado sabendo quanto vai retonar por cada centavo investido.",
+      description: "Atraia exatamente quem precisa do que você oferece. Com tráfego pago inteligente e remarketing estruturado, você sabe exatamente quanto cada real investido vai retornar.",
       icon: Target,
       showDashboard: true,
       animationType: 'leads',
@@ -55,7 +55,7 @@ function App() {
     },
     {
       title: "Implementação de CRM e Dados",
-      description: "Extraia insights acionáveis ​​de conjuntos de dados complexos para impulsionar decisões informadas e acelerar o crescimento dos negócios.",
+      description: "Transforme números confusos em decisões claras. Extraímos insights que fazem sentido dos seus dados para acelerar o crescimento do seu negócio.",
       icon: Database,
       size: "wide",
       showDashboard: true,
@@ -64,7 +64,7 @@ function App() {
     },
     {
       title: "Chatbot inteligente e automação",
-      description: "Melhore as interações com o cliente automatizando respostas com chatbots que aprendem sobre sua empresa, fornecendo um serviço perfeito.",
+      description: "Seus clientes merecem respostas rápidas, mesmo quando você está dormindo. Nossos chatbots aprendem sobre seu negócio e oferecem atendimento de qualidade 24/7. Não substítuimos humanos, mas potencializamos eles.",
       icon: MessageSquare,
       showDashboard: true,
       animationType: 'chatbot',
@@ -72,7 +72,7 @@ function App() {
     },
     {
       title: "Treinamento e conteúdo",
-      description: "Consultorias, dinâmicas e conteúdos que criam uma cultura de colocar a mão na massa e resolver problemas de forma criativa para impulsionar seu time e seu público para dentro da sua marca.",
+      description: "Criamos uma cultura de solução de problemas na sua empresa. Consultorias práticas, dinâmicas que funcionam e conteúdos que aproximam seu público da sua marca.",
       icon: FileText,
       showDashboard: true,
       animationType: 'content',
@@ -80,14 +80,14 @@ function App() {
     },
     {
       title: "Automação Inteligente",
-      description: "Automatize processos repetitivos e libere sua equipe para focar no que realmente importa. Sistemas inteligentes que aprendem e se adaptam às necessidades do seu negócio.",
+      description: "Liberte sua equipe das tarefas que um sistema pode fazer melhor. Nossa automação aprende e se adapta conforme seu negócio evolui.",
       icon: Settings,
       showDashboard: true,
       animationType: 'automation',
       link: '/servicos/automacoes',
     },
     {
-      title: "Posicionamento Estratégico",
+      title: "Tráfego Pago com Análise de Dados",
       description: "Defina e fortaleça o posicionamento da sua marca no mercado. Estratégias personalizadas para destacar sua empresa da concorrência e conquistar seu público-alvo.",
       icon: Compass,
       showDashboard: true,
@@ -99,17 +99,17 @@ function App() {
   const benefitCards = [
     {
       title: "Redução de custos",
-      description: "Otimize os processos de negócios e agilize as operações para minimizar significativamente os custos e maximizar a eficiência geral.",
+      description: "Otimizamos seus processos para cortar custos desnecessários sem perder qualidade. Cada centavo economizado volta para o que realmente importa: fazer seu negócio crescer.",
       icon: DollarSign,
     },
     {
       title: "Resultados aprimorados",
-      description: "Aproveite insights poderosos baseados em dados e estratégias inovadoras para aprimorar o desempenho dos negócios e obter resultados superiores.",
+      description: "Dados não mentem. Nossas estratégias baseadas em inteligência de mercado entregam performance superior e resultados que seus concorrentes vão querer copiar.",
       icon: TrendingUp,
     },
     {
       title: "Maior produtividade",
-      description: "Aprimore o desempenho e a produção do grupo automatizando tarefas redundantes, refinando processos e acelerando as funções de negócios.",
+      description: "Automatizamos o que é chato, refinamos o que funciona e aceleramos o que gera resultado. Sua equipe trabalha menos horas, mas produz muito mais.",
       icon: Zap,
     },
   ];
@@ -189,7 +189,7 @@ function App() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-base sm:text-lg md:text-xl text-white mb-8 md:mb-16 font-space-grotesk px-4"
           >
-            aprenda a explorar brechas para promover histórias únicas
+            descubra oportunidades escondidas que contam a história do seu negócio
           </motion.p>
 
           {/* Moving Words Panel */}
@@ -215,8 +215,8 @@ function App() {
         <div className="max-w-7xl mx-auto relative z-10">
           <SectionHeader
             badge="PROCESSO"
-            title="Seu caminho para o crescimento"
-            subtitle="Uma abordagem simples e eficaz para entregar excelência."
+            title="O caminho que leva você ao crescimento"
+            subtitle="Sem complicação. Só resultados que funcionam de verdade."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -245,8 +245,9 @@ function App() {
         <div className="max-w-7xl mx-auto relative z-10">
           <SectionHeader
             badge="SERVIÇOS"
-            title="Serviços inovadores para crescimento"
-            subtitle="Soluções personalizadas para otimizar, inovar e crescer."
+            title="Nossos Serviços"
+            subtitle="Crescimento real para quem quer sair do lugar.
+            Cada empresa é única. Nossas soluções também são."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -290,8 +291,8 @@ function App() {
         <div className="max-w-7xl mx-auto relative z-10">
           <SectionHeader
             badge="BENEFÍCIOS"
-            title="Maximize a eficiência e o impacto"
-            subtitle="Descubra os principais benefícios de fazer parceria conosco."
+            title="Resultados que você pode ver e sentir no bolso."
+            subtitle="Veja o que acontece quando você trabalha com quem entende do assunto"
           />
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -332,7 +333,7 @@ function App() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-2xl md:text-4xl font-syncopate mb-6"
           >
-            Vamos falar sobre sua próxima grande mudança
+            Pronto para a próxima fase do seu negócio?
           </motion.h2>
 
           <motion.p
@@ -342,7 +343,7 @@ function App() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg text-gray-300 mb-8"
           >
-            Fale conosco para ver como nossos serviços podem acelerar seu crescimento.
+            Vamos conversar sobre como podemos acelerar seu crescimento de verdade.
           </motion.p>
 
           <motion.div
@@ -354,9 +355,9 @@ function App() {
           >
             <button className="bg-gradient-to-r from-[#6b2c84] via-[#98356b] to-[#ec6429] text-black px-8 py-4 rounded-full hover:opacity-90 transition-all flex items-center gap-2 text-lg font-medium shadow-lg shadow-[#6b2c84]/20">
               <Calendar className="w-5 h-5" />
-              Agende uma ligação rápida
+              Agende uma conversa rápida
             </button>
-            <span className="text-sm text-gray-400">É grátis</span>
+            <span className="text-sm text-gray-400">É grátis e sem compromisso</span>
           </motion.div>
         </div>
       </section>
@@ -371,9 +372,9 @@ function App() {
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <SectionHeader
-            badge="FAQ"
-            title="Perguntas Frequentes"
-            subtitle="Encontre respostas para suas dúvidas mais comuns."
+            badge="PERGUNTAS FREQUENTES"
+            title="Suas dúvidas, nossas respostas"
+            subtitle="As perguntas que todo mundo faz antes de começar."
           />
           <FAQ />
         </div>
