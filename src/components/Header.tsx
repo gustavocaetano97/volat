@@ -33,7 +33,8 @@ const Header = () => {
         { label: 'CRM e Dados', href: '/servicos/insights' },
         { label: 'Chatbot', href: '/servicos/chatbot' },
         { label: 'Conteúdo', href: '/servicos/conteudo' },
-        { label: 'Posicionamento', href: '/servicos/posicionamento' }
+        { label: 'Posicionamento', href: '/servicos/posicionamento' },
+        { label: 'Código do Domínio', href: '/doug-demarco' }
       ]
     },
     { label: 'Benefícios', href: '/beneficios' },

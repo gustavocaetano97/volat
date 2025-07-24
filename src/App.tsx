@@ -87,7 +87,7 @@ function App() {
       link: '/servicos/automacoes',
     },
     {
-      title: "Tráfego Pago com Análise de Dados",
+      title: "Posicionamento Estratégico",
       description: "Defina e fortaleça o posicionamento da sua marca no mercado. Estratégias personalizadas para destacar sua empresa da concorrência e conquistar seu público-alvo.",
       icon: Compass,
       showDashboard: true,
@@ -246,8 +246,7 @@ function App() {
           <SectionHeader
             badge="SERVIÇOS"
             title="Nossos Serviços"
-            subtitle="Crescimento real para quem quer sair do lugar.
-            Cada empresa é única. Nossas soluções também são."
+            subtitle="Crescimento real para quem quer sair do lugar. Cada empresa é única. Nossas soluções também são."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -372,7 +371,7 @@ function App() {
         <div className="absolute inset-0 bg-black/80"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <SectionHeader
-            badge="PERGUNTAS FREQUENTES"
+            badge="FAQ"
             title="Suas dúvidas, nossas respostas"
             subtitle="As perguntas que todo mundo faz antes de começar."
           />

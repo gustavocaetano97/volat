@@ -11,6 +11,7 @@ import AutomationService from './pages/services/AutomationService.tsx'
 import PositioningService from './pages/services/PositioningService.tsx'
 import Blog from './pages/blog/Blog.tsx'
 import BlogPost from './pages/blog/BlogPost.tsx'
+import DougDemarcoPage from './pages/DougDemarcoPage.tsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/blog/:slug",
     element: <BlogPost />,
+  },
+  {
+    path: "/doug-demarco",
+    element: <DougDemarcoPage />,
   },
 ]);
 
