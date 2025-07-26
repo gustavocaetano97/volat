@@ -179,24 +179,16 @@ function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="responsive-title font-bold text-white mb-4 tracking-wider font-syncopate px-4 break-words"
+            className="responsive-title font-bold text-white mb-4 tracking-wider font-syncopate px-4 break-words flex flex-col items-center gap-2"
           >
-            MUITO ALÉM DE GESTÃO DE
-          </motion.h1>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mb-4"
-          >
+            <span>MUITO ALÉM DE GESTÃO DE</span>
             <TypingAnimation />
-          </motion.div>
+          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
             className="text-base sm:text-lg md:text-xl text-white mb-8 md:mb-16 font-space-grotesk px-4"
           >
             descubra oportunidades escondidas que contam a história do seu negócio
@@ -206,7 +198,7 @@ function App() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             className="w-full max-w-sm md:max-w-2xl mx-auto bg-black/30 backdrop-blur-sm rounded-2xl p-4 md:p-8"
           >
             <MovingWords />

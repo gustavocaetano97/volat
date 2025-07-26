@@ -51,6 +51,10 @@
     font-size: clamp(1.5rem, 4vw, 3rem);
     line-height: 1.2;
   }
+  
+  .responsive-title span {
+    display: inline-block;
+  }
 }
 
 .moving-words {
