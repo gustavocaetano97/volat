@@ -46,6 +46,11 @@
     line-height: 1.2;
     word-break: break-word;
   }
+  
+  .typing-text {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    line-height: 1.2;
+  }
 }
 
 .moving-words {
