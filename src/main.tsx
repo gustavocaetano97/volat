@@ -56,8 +56,8 @@ const router = createBrowserRouter([
     element: <BlogPost />,
   },
   {
-    path: "/doug-demarco",
-    element: <DougDemarcoPage />,
+    path: "/protocolo-dominio",
+    element: <DougDemarcoPage />, 
   },
 ]);
 

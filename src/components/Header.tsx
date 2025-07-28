@@ -34,7 +34,7 @@ const Header = () => {
         { label: 'Chatbot', href: '/servicos/chatbot' },
         { label: 'Conteúdo', href: '/servicos/conteudo' },
         { label: 'Posicionamento', href: '/servicos/posicionamento' },
-        { label: 'Código do Domínio', href: '/doug-demarco' }
+        { label: 'Código do Domínio', href: '/protocolo-dominio' }
       ]
     },
     { label: 'Benefícios', href: '/beneficios' },
