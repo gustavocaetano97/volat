@@ -15,7 +15,7 @@ const DougDemarcoPage = () => {
     const timer = setInterval(() => {
       setTimeLeft(prev => {
         let { days, hours, minutes, seconds } = prev;
-        
+
         if (seconds > 0) {
           seconds--;
         } else if (minutes > 0) {
@@ -31,7 +31,7 @@ const DougDemarcoPage = () => {
           minutes = 59;
           seconds = 59;
         }
-        
+
         return { days, hours, minutes, seconds };
       });
     }, 1000);
@@ -48,7 +48,7 @@ const DougDemarcoPage = () => {
 
   const targetAudience = [
     "Mentor que tá cansado de ser invisível",
-    "Consultor que sabe que vale mais do que cobra", 
+    "Consultor que sabe que vale mais do que cobra",
     "Prestador de serviço que quer sair da correria",
     "Profissional liberal que quer escalar",
     "Infoprodutor que quer vender de verdade"
@@ -61,13 +61,13 @@ const DougDemarcoPage = () => {
       description: "Quando você fala de um jeito tão claro, tão direto, tão... seu, que o cliente para e pensa: 'Caralho, é exatamente isso que eu preciso. Como esse cara leu minha mente?'"
     },
     {
-      title: "PRESENÇA", 
+      title: "PRESENÇA",
       subtitle: "Ficar na mente do cliente o tempo todo, mas do jeito certo",
       description: "Presença de verdade é fazer conteúdo que GRUDA na mente da pessoa. Você aparece e ela pensa: 'Esse cara é um gênio... tudo que ele fala faz sentido total.'"
     },
     {
       title: "MONETIZAÇÃO",
-      subtitle: "Fazer dinheiro cair na sua conta sem precisar ficar implorando", 
+      subtitle: "Fazer dinheiro cair na sua conta sem precisar ficar implorando",
       description: "Você vai criar uma TEIA DE OFERTAS tão bem feita, tão óbvia, que o cliente vai falar: 'Cara, como é que eu faço pra comprar isso AGORA?'"
     }
   ];
@@ -107,7 +107,7 @@ const DougDemarcoPage = () => {
 
   return (
     <Layout
-      title="Código do Domínio - Doug Demarco"
+      title="Código do Domínio - Gustavo Rhidon"
       description="Transforme seu conhecimento em dinheiro de verdade. O sistema que pega especialistas invisíveis e transforma em ímãs de conversão."
     >
       {/* Hero Section */}
@@ -122,7 +122,7 @@ const DougDemarcoPage = () => {
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-black mb-8 leading-tight">
               Olha... não importa se você é um <span className="text-[#6b2c84]">mentor que tá há meses tentando decolar</span> e não consegue
             </h1>
-            
+
             <p className="text-xl md:text-2xl font-bold mb-8 text-gray-200">
               Se você tem conhecimento de verdade — daqueles que faz diferença mesmo — eu pego isso e <span className="text-green-400">transformo em dinheiro</span>. E olha, não tô falando de "um dia vai dar certo". Tô falando de <span className="text-yellow-400">rápido mesmo</span>.
             </p>
@@ -149,18 +149,18 @@ const DougDemarcoPage = () => {
             <h2 className="text-4xl md:text-5xl font-black mb-8 text-red-400">
               São 3:47 da manhã.
             </h2>
-            
+
             <div className="text-left max-w-3xl mx-auto space-y-6 text-lg md:text-xl font-semibold">
               <p>E você tá aí. Acordado. De novo.</p>
-              
+
               <p>Aquela sensação conhecida, né? Scrollando o feed que nem um zumbi, com aquela luz azul queimando os olhos...</p>
-              
+
               <p>Aí você vê aquele cara. Ah, você SABE qual é. Aquele que você tem certeza absoluta que não entende nem 30% do que você entende...</p>
-              
+
               <p className="text-green-400 font-bold">E lá está ele. Sorrindo feito bobo com as chaves da BMW que "comprou pra esposa". R$ 380 mil. À vista. Postou foto e tudo.</p>
-              
+
               <p className="text-red-400 font-bold">Enquanto isso, você? Você tá aqui, meio que... esperando aquele PIX de R$ 200 cair pra conseguir fechar o mês sem passar aperto.</p>
-              
+
               <p className="text-2xl font-black text-center text-yellow-400">Ai, que raiva, né?</p>
             </div>
           </motion.div>
@@ -180,20 +180,20 @@ const DougDemarcoPage = () => {
             <h2 className="text-3xl md:text-4xl font-black mb-8 text-red-400">
               Vou te contar uma verdade que vai doer:
             </h2>
-            
+
             <h3 className="text-4xl md:text-5xl font-black mb-8 text-yellow-400">
               O OUTRO CARA É MELHOR QUE VOCÊ.
             </h3>
-            
+
             <div className="text-left max-w-3xl mx-auto space-y-6 text-lg md:text-xl font-semibold">
               <p>Espera, espera... antes de você fechar essa janela com raiva, me escuta.</p>
-              
+
               <p>Ele não é melhor porque sabe mais. Longe disso. <span className="text-[#6b2c84] font-bold">Ele é melhor porque ele joga melhor.</span></p>
-              
+
               <p>Sacou a diferença?</p>
-              
+
               <p className="text-green-400 font-bold">Ele entendeu uma parada que você ainda não entendeu: o jogo não é sobre o que você sabe. É sobre como você faz as pessoas SENTIREM sobre o que você sabe.</p>
-              
+
               <p className="text-xl font-black text-center bg-gradient-to-r from-[#6b2c84]/30 to-[#ec6429]/30 p-6 rounded-2xl">
                 O mercado não paga por conhecimento, meu amigo. Nunca pagou. Ele paga por quem consegue fazer ele SENTIR alguma coisa.
               </p>
@@ -213,21 +213,21 @@ const DougDemarcoPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-black mb-8">
-              Meu nome é <span className="text-[#6b2c84]">Doug Demarco</span> — e olha, provavelmente você já sabe disso.
+              Meu nome é <span className="text-[#6b2c84]">Gustavo Rhidon</span> — e olha, provavelmente você já sabe disso.
             </h2>
-            
+
             <div className="text-left max-w-3xl mx-auto space-y-6 text-lg md:text-xl font-semibold mb-12">
               <p>O que você talvez não saiba é que há uns 3 anos atrás, eu era... bem, ninguém. Literalmente ninguém.</p>
-              
+
               <p>Eu era só mais um diretor de estratégia perdido numa holding de consultorias gigante. Sabe como é? Bom salário, crachá bonitinho, cargo que impressiona na reunião de família...</p>
-              
+
               <p className="text-red-400 font-bold">Mas completamente invisível.</p>
-              
+
               <p>Tipo, se eu sumisse da empresa, iam demorar uns 3 dias pra perceber.</p>
-              
+
               <p>Até que um dia... descobri que ia ser pai.</p>
-              
-              <p className="text-yellow-400 font-bold">E aí, bateu aquele desespero existencial, sabe? Pensei: "Caramba, Doug, você precisa ganhar mais dinheiro. E precisa ser agora."</p>
+
+              <p className="text-yellow-400 font-bold">E aí, bateu aquele desespero existencial, sabe? Pensei: "Caramba, Gustavo, você precisa ganhar mais dinheiro. E precisa ser agora."</p>
             </div>
 
             <div className="bg-gradient-to-r from-green-900/50 to-blue-900/50 p-8 rounded-2xl mb-8">
@@ -268,7 +268,7 @@ const DougDemarcoPage = () => {
             <h2 className="text-3xl md:text-4xl font-black mb-8 text-[#6b2c84]">
               O QUE EU TENHO AQUI FUNCIONA PRA QUALQUER TIPO DE ESPECIALISTA:
             </h2>
-            
+
             <div className="space-y-4">
               {targetAudience.map((audience, index) => (
                 <motion.div
@@ -301,11 +301,11 @@ const DougDemarcoPage = () => {
             <h2 className="text-4xl md:text-5xl font-black mb-8 text-[#6b2c84]">
               Eu chamo isso de: CÓDIGO DO DOMÍNIO.
             </h2>
-            
+
             <p className="text-xl md:text-2xl font-bold mb-12 max-w-4xl mx-auto">
               Pra você nunca mais ser ignorado no seu mercado, você precisa de três sistemas trabalhando juntos:
             </p>
-            
+
             <h3 className="text-3xl md:text-4xl font-black text-yellow-400 mb-12">
               NARRATIVA — PRESENÇA — MONETIZAÇÃO
             </h3>
@@ -355,15 +355,15 @@ const DougDemarcoPage = () => {
             <h2 className="text-4xl md:text-5xl font-black mb-8 text-green-400">
               É isso que você vira.
             </h2>
-            
+
             <p className="text-xl md:text-2xl font-bold mb-8">
               Não um "influenciador". Não um "produtor de conteúdo".
             </p>
-            
+
             <h3 className="text-5xl md:text-6xl font-black mb-12 text-[#6b2c84]">
               Um IMÃ DE DINHEIRO.
             </h3>
-            
+
             <div className="bg-gradient-to-r from-yellow-900/50 to-orange-900/50 p-8 rounded-2xl mb-8">
               <p className="text-lg md:text-xl font-bold mb-4">
                 Enquanto os outros ainda tão aí, rezando pra viralizar... você já tá espalhando armadilhas por todo canto.
@@ -389,20 +389,20 @@ const DougDemarcoPage = () => {
             <h2 className="text-4xl md:text-5xl font-black mb-8">
               E pra isso, você vai ter acesso a uma coisa que mais ninguém tem:
             </h2>
-            
+
             <h3 className="text-3xl md:text-4xl font-black mb-8 text-[#6b2c84]">
               Um cérebro artificial. Treinado. Que pensa junto com você — e executa junto com você.
             </h3>
-            
+
             <div className="bg-gradient-to-r from-[#6b2c84]/30 to-[#ec6429]/30 p-8 rounded-2xl mb-12">
               <h4 className="text-4xl md:text-5xl font-black mb-4 text-yellow-400">
-                DOUG.EXE 3.0
+                RHIDON.EXE 3.0
               </h4>
               <p className="text-xl md:text-2xl font-bold">
                 O agente mais impaciente e eficiente do mercado digital.
               </p>
             </div>
-            
+
             <p className="text-lg md:text-xl font-semibold max-w-4xl mx-auto">
               Parece robô? É. Mas por trás dele tem um mentor de carne e osso, meio obcecado e bastante impaciente (eu mesmo).
             </p>
@@ -439,7 +439,7 @@ const DougDemarcoPage = () => {
             <h2 className="text-4xl md:text-5xl font-black mb-8 text-red-400">
               PRÓXIMA ABERTURA:
             </h2>
-            
+
             <div className="bg-gradient-to-r from-red-900/50 to-orange-900/50 p-8 rounded-2xl mb-12">
               <h3 className="text-2xl md:text-3xl font-bold mb-6">Segunda semana de junho</h3>
               <div className="text-3xl md:text-4xl font-black mb-4 text-yellow-400">
@@ -460,11 +460,11 @@ const DougDemarcoPage = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-lg font-bold">
               <div className="flex items-center gap-2">
                 <Mail className="w-6 h-6 text-[#6b2c84]" />
-                <span>contato@dougdemarco.com</span>
+                <span>contato@gustavorhidon.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MessageSquare className="w-6 h-6 text-green-400" />
-                <span>@dougdemarco_</span>
+                <span>@gustavorhidon</span>
               </div>
             </div>
           </motion.div>
