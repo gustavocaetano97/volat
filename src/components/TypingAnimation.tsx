@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import anime from "animejs";
+import anime from "animejs/lib/anime.es.js";
 
 const WORDS = [
   "NEGÓCIOS",
