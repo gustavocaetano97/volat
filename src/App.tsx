@@ -181,17 +181,17 @@ function App() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="responsive-title font-bold text-white mb-4 tracking-wider font-syncopate px-4 break-words flex flex-col items-center gap-2"
           >
-            <span>MUITO ALÉM DE GESTÃO DE</span>
+            <span>GESTÃO DE</span>
             <TypingAnimation />
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-white mb-8 md:mb-16 font-space-grotesk px-4"
           >
-            descubra oportunidades escondidas que contam a história do seu negócio
+            descubra oportunidades escondidas que multiplicam o faturamento da sua empresa
           </motion.p>
 
           {/* Moving Words Panel */}

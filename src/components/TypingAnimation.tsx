@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-// @ts-ignore
-import anime from "animejs";
 
 const WORDS = [
   "NEGÓCIOS",
@@ -22,23 +20,6 @@ const TypingAnimation: React.FC = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [isTyping, setIsTyping] = useState(true);
   const timeoutRef = useRef<number | null>(null);
-
-  // Blinking cursor animation
-  useEffect(() => {
-    const cursor = document.getElementById("blinking-cursor");
-    if (cursor) {
-      anime({
-        targets: cursor,
-        opacity: [
-          { value: 1, duration: 400 },
-          { value: 0, duration: 400 },
-        ],
-        easing: "linear",
-        loop: true,
-        direction: "alternate",
-      });
-    }
-  }, []);
 
   useEffect(() => {
     const currentWord = WORDS[wordIndex];
@@ -84,11 +65,12 @@ const TypingAnimation: React.FC = () => {
       {displayed}
       <span
         id="blinking-cursor"
+        className="animate-pulse"
         style={{
           display: "inline-block",
           width: "0.7ch",
           marginLeft: "2px",
-          background: "white",
+          background: "#a855f7",
           height: "1em",
           verticalAlign: "bottom",
           borderRadius: "2px",
