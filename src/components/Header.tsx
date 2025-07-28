@@ -77,20 +77,8 @@ const Header = () => {
               isScrolled ? 'justify-center gap-8 md:gap-12' : 'justify-between'
             }`}
           >
-            <div className={`transition-all duration-500 ${isScrolled ? 'scale-90' : ''} mt-6`}>
-              <Link
-                to="/"
-                className="font-extrabold text-2xl px-6 py-2 rounded-full"
-                style={{
-                  background: 'linear-gradient(90deg, #e3e3e3 0%, #bdbdbd 50%, #f8f8f8 100%)',
-                  boxShadow: '0 2px 12px 0 rgba(180,180,180,0.15)',
-                  color: '#222',
-                  letterSpacing: '0.05em',
-                  fontWeight: 900,
-                  border: '1px solid #d1d1d1',
-                  textShadow: '0 1px 2px #fff, 0 0px 8px #bdbdbd'
-                }}
-              >
+            <div className={`transition-all duration-500 ${isScrolled ? 'scale-90' : ''}`}>
+              <Link to="/" className="gradient-text font-bold text-xl">
                 VOLAT
               </Link>
             </div>

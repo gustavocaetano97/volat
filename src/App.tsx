@@ -165,12 +165,12 @@ function App() {
 
         {/* Main Content */}
         <div className="relative z-10 text-center max-w-7xl mx-auto w-full">
-          {/* Brand Badge */}
+            {/* Brand Badge */}
             <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-block mb-12 md:mb-16 px-4 md:px-6 py-2 rounded-full border border-[#ec6429]/10"
+            className="inline-block mb-16 md:mb-24 mt-8 md:mt-16 px-4 md:px-6 py-2 rounded-full border border-[#ec6429]/10"
             style={{
               background: 'linear-gradient(90deg, #e0e0e0 0%, #f5f5f5 50%, #bdbdbd 100%)',
               boxShadow: '0 2px 8px 0 rgba(180,180,180,0.15)',
