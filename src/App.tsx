@@ -166,14 +166,21 @@ function App() {
         {/* Main Content */}
         <div className="relative z-10 text-center max-w-7xl mx-auto w-full">
           {/* Brand Badge */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-block mb-6 md:mb-8 px-4 md:px-6 py-2 bg-black/30 backdrop-blur-sm rounded-full border border-[#ec6429]/10"
-          >
-            <span className="font-syncopate text-[#ec6429] tracking-wider text-sm md:text-base">VOLAT</span>
-          </motion.div>
+            className="inline-block mb-12 md:mb-16 px-4 md:px-6 py-2 rounded-full border border-[#ec6429]/10"
+            style={{
+              background: 'linear-gradient(90deg, #e0e0e0 0%, #f5f5f5 50%, #bdbdbd 100%)',
+              boxShadow: '0 2px 8px 0 rgba(180,180,180,0.15)',
+              backdropFilter: 'blur(6px)',
+            }}
+            >
+            <span className="font-syncopate text-[#ec6429] tracking-wider text-sm md:text-base font-bold">
+              VOLAT
+            </span>
+            </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
