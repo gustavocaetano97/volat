@@ -181,7 +181,7 @@ function App() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="responsive-title font-bold text-white mb-4 tracking-wider font-syncopate px-4 break-words flex flex-col items-center gap-2"
           >
-            <span>MUITO ALÉM DE GESTÃO DE</span>
+            <span>GESTÃO DE</span>
             <TypingAnimation />
           </motion.h1>
 
