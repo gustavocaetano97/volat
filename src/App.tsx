@@ -155,7 +155,7 @@ function App() {
       description="Transforme seu negócio com soluções inovadoras de crescimento comercial. Chatbot inteligente, criação de conteúdo, geração de receita previsível e mais."
     >
       {/* Hero Section */}
-      <div className="relative min-h-[100svh] flex items-center justify-center overflow-hidden px-4 py-32 md:py-0 pt-48">
+      <div className="relative min-h-[100svh] flex items-center justify-center overflow-hidden px-4 py-16 md:py-0 pt-32 md:pt-48">
       {/* Gradient Effects */}
       <div className="absolute top-0 left-0 w-[40rem] h-[40rem] bg-gradient-to-r from-[#6b2c84]/20 to-transparent rounded-full filter blur-3xl animate-gradient-x"></div>
       <div className="absolute bottom-0 right-0 w-[40rem] h-[40rem] bg-gradient-to-l from-[#6b2c84]/20 to-transparent rounded-full filter blur-3xl animate-gradient-x"></div>
@@ -164,22 +164,17 @@ function App() {
       <AnimatedDots />
 
       {/* Main Content */}
-      <div className="relative z-10 text-center max-w-7xl mx-auto w-full">
+      <div className="relative z-10 text-center max-w-7xl mx-auto w-full px-2 sm:px-4 md:px-8">
+        {/* Espaço extra acima da Brand Badge */}
+        <div className="h-12 md:h-20"></div>
         {/* Brand Badge */}
         <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="inline-block mb-16 md:mb-24 mt-16 md:mt-32 px-4 md:px-6 py-2 rounded-full border border-[#ec6429]/10"
-        style={{
-          background: 'linear-gradient(90deg, #e0e0e0 0%, #f5f5f5 50%, #bdbdbd 100%)',
-          boxShadow: '0 2px 8px 0 rgba(180,180,180,0.15)',
-          backdropFilter: 'blur(6px)',
-        }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="inline-block mb-10 px-6 md:px-8 py-3 bg-black/30 backdrop-blur-sm rounded-full border border-[#6b2c84]/10"
         >
-        <span className="font-syncopate text-[#ec6429] tracking-wider text-sm md:text-base font-bold">
-          VOLAT
-        </span>
+          <span className="font-syncopate text-[#ec6429] tracking-wider text-sm md:text-base font-bold">VOLAT</span>
         </motion.div>
 
         <motion.h1
@@ -213,31 +208,58 @@ function App() {
       </div>
       </div>
 
+      {/* Benefícios Section */}
+      <section
+        className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80")',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <SectionHeader
+            badge="BENEFÍCIOS"
+            title="Resultados que você pode ver e sentir no bolso."
+            subtitle="Veja o que acontece quando você trabalha com quem entende do assunto"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {benefitCards.map((card, index) => (
+              <BenefitCard
+                key={card.title}
+                {...card}
+                delay={index * 0.2}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Processo Section */}
       <section
-      className="py-16 md:py-32 px-4 bg-black/50 relative bg-responsive"
-      style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80")',
-      }}
+        className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80")',
+        }}
       >
-      <div className="absolute inset-0 bg-black/80"></div>
-      <div className="max-w-7xl mx-auto relative z-10">
-        <SectionHeader
-        badge="PROCESSO"
-        title="O caminho que leva você ao crescimento"
-        subtitle="Sem complicação. Só resultados que funcionam de verdade."
-        />
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-        {processCards.map((card, index) => (
-          <ProcessCard
-          key={card.title}
-          {...card}
-          delay={index * 0.2}
+        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <SectionHeader
+            badge="PROCESSO"
+            title="O caminho que leva você ao crescimento"
+            subtitle="Sem complicação. Só resultados que funcionam de verdade."
           />
-        ))}
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+            {processCards.map((card, index) => (
+              <ProcessCard
+                key={card.title}
+                {...card}
+                delay={index * 0.2}
+              />
+            ))}
+          </div>
         </div>
-      </div>
       </section>
 
       {/* Interactive Tech Service Cards */}
@@ -245,7 +267,7 @@ function App() {
 
       {/* Serviços Section */}
       <section
-      className="py-16 md:py-32 px-4 relative bg-responsive"
+      className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 relative bg-responsive"
       style={{
         backgroundImage: 'url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80")',
       }}
@@ -290,7 +312,7 @@ function App() {
 
       {/* Benefícios Section */}
       <section
-      className="py-16 md:py-32 px-4 bg-black/50 relative bg-responsive"
+      className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
       style={{
         backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80")',
       }}
@@ -317,7 +339,7 @@ function App() {
 
       {/* CTA Section */}
       <section
-      className="py-16 md:py-32 px-4 relative bg-responsive"
+      className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 relative bg-responsive"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80")',
         }}
@@ -372,7 +394,7 @@ function App() {
 
       {/* FAQ Section */}
       <section
-        className="py-16 md:py-32 px-4 relative bg-responsive"
+        className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 relative bg-responsive"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80")',
         }}
