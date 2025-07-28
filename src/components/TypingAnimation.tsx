@@ -79,3 +79,5 @@ const TypingAnimation: React.FC = () => {
     </h1>
   );
 };
+
+export default TypingAnimation;
