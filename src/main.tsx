@@ -57,7 +57,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/protocolo-dominio",
-    element: <DougDemarcoPage />, 
+    element: <DougDemarcoPage />,
   },
 ]);
 
