@@ -191,7 +191,7 @@ function App() {
             transition={{ duration: 0, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-white mb-8 md:mb-16 font-space-grotesk px-4"
           >
-            descubra oportunidades escondidas que contam a história do seu negócio
+            descubra oportunidades escondidas que dobra o faturamento da sua empresa
           </motion.p>
 
           {/* Moving Words Panel */}
