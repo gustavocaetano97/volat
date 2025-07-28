@@ -155,7 +155,7 @@ function App() {
       description="Transforme seu negócio com soluções inovadoras de crescimento comercial. Chatbot inteligente, criação de conteúdo, geração de receita previsível e mais."
     >
       {/* Hero Section */}
-      <div className="relative min-h-[100svh] flex items-center justify-center overflow-hidden px-4 py-16 md:py-0 pt-32 md:pt-48">
+      <div className="relative min-h-[100svh] flex items-center justify-center overflow-hidden px-2 py-6 sm:py-8 md:py-0 pt-10 sm:pt-16 md:pt-24">
       {/* Gradient Effects */}
       <div className="absolute top-0 left-0 w-[40rem] h-[40rem] bg-gradient-to-r from-[#6b2c84]/20 to-transparent rounded-full filter blur-3xl animate-gradient-x"></div>
       <div className="absolute bottom-0 right-0 w-[40rem] h-[40rem] bg-gradient-to-l from-[#6b2c84]/20 to-transparent rounded-full filter blur-3xl animate-gradient-x"></div>
@@ -165,14 +165,12 @@ function App() {
 
       {/* Main Content */}
       <div className="relative z-10 text-center max-w-7xl mx-auto w-full px-2 sm:px-4 md:px-8">
-        {/* Espaço extra acima da Brand Badge */}
-        <div className="h-12 md:h-20"></div>
         {/* Brand Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-block mb-10 px-6 md:px-8 py-3 bg-black/30 backdrop-blur-sm rounded-full border border-[#6b2c84]/10"
+          className="inline-block mb-8 sm:mb-10 px-4 sm:px-6 md:px-8 py-2 sm:py-3 bg-black/30 backdrop-blur-sm rounded-full border border-[#6b2c84]/10"
         >
           <span className="font-syncopate text-[#ec6429] tracking-wider text-sm md:text-base font-bold">VOLAT</span>
         </motion.div>
@@ -181,7 +179,7 @@ function App() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="responsive-title font-bold text-white mb-4 tracking-wider font-syncopate px-4 break-words flex flex-col items-center gap-2"
+        className="responsive-title font-bold text-white mb-2 sm:mb-4 tracking-wider font-syncopate px-2 sm:px-4 break-words flex flex-col items-center gap-1 sm:gap-2 text-xl sm:text-2xl md:text-4xl"
         >
         <span>GESTÃO DE</span>
         <TypingAnimation />
@@ -191,7 +189,7 @@ function App() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0, delay: 0.2 }}
-        className="text-base sm:text-lg md:text-xl text-white mb-8 md:mb-16 font-space-grotesk px-4"
+        className="text-sm sm:text-lg md:text-xl text-white mb-6 sm:mb-8 md:mb-16 font-space-grotesk px-2 sm:px-4"
         >
         descubra oportunidades escondidas que multiplicam o faturamento da sua empresa
         </motion.p>
@@ -201,7 +199,7 @@ function App() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="w-full max-w-sm md:max-w-2xl mx-auto bg-black/30 backdrop-blur-sm rounded-2xl p-4 md:p-8"
+        className="w-full max-w-xs sm:max-w-sm md:max-w-2xl mx-auto bg-black/30 backdrop-blur-sm rounded-2xl p-2 sm:p-4 md:p-8"
         >
         <MovingWords />
         </motion.div>
@@ -210,7 +208,7 @@ function App() {
 
       {/* Benefícios Section */}
       <section
-        className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
+        className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80")',
         }}
@@ -223,7 +221,7 @@ function App() {
             subtitle="Veja o que acontece quando você trabalha com quem entende do assunto"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
             {benefitCards.map((card, index) => (
               <BenefitCard
                 key={card.title}
@@ -237,7 +235,7 @@ function App() {
 
       {/* Processo Section */}
       <section
-        className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
+        className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80")',
         }}
@@ -250,7 +248,7 @@ function App() {
             subtitle="Sem complicação. Só resultados que funcionam de verdade."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
             {processCards.map((card, index) => (
               <ProcessCard
                 key={card.title}
@@ -267,7 +265,7 @@ function App() {
 
       {/* Serviços Section */}
       <section
-      className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 relative bg-responsive"
+      className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 relative bg-responsive"
       style={{
         backgroundImage: 'url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80")',
       }}
@@ -280,7 +278,7 @@ function App() {
         subtitle="Crescimento real para quem quer sair do lugar. Cada empresa é única. Nossas soluções também são."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
         {serviceCards.slice(0, 3).map((card, index) => (
           <ServiceCard
           key={card.title}
@@ -289,7 +287,7 @@ function App() {
           />
         ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-4 sm:mt-8">
         {serviceCards.slice(3, 5).map((card, index) => (
           <ServiceCard
           key={card.title}
@@ -298,7 +296,7 @@ function App() {
           />
         ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-4 sm:mt-8">
         {serviceCards.slice(5).map((card, index) => (
           <ServiceCard
           key={card.title}
@@ -312,7 +310,7 @@ function App() {
 
       {/* Benefícios Section */}
       <section
-      className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
+      className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
       style={{
         backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80")',
       }}
@@ -325,7 +323,7 @@ function App() {
         subtitle="Veja o que acontece quando você trabalha com quem entende do assunto"
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
         {benefitCards.map((card, index) => (
           <BenefitCard
           key={card.title}
@@ -339,19 +337,19 @@ function App() {
 
       {/* CTA Section */}
       <section
-      className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 relative bg-responsive"
+      className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 relative bg-responsive"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80")',
         }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
-        <div className="max-w-3xl mx-auto text-center relative z-10">
+        <div className="max-w-lg sm:max-w-2xl md:max-w-3xl mx-auto text-center relative z-10 px-2 sm:px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="inline-block mb-6 px-4 md:px-6 py-2 bg-black/30 backdrop-blur-sm rounded-full border border-[#6ec6429]/10"
+            className="inline-block mb-4 sm:mb-6 px-2 sm:px-4 md:px-6 py-1 sm:py-2 bg-black/30 backdrop-blur-sm rounded-full border border-[#6ec6429]/10"
           >
             <span className="font-syncopate text-[#ec6429] tracking-wider text-sm md:text-base">VOLAT</span>
           </motion.div>
@@ -361,7 +359,7 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-2xl md:text-4xl font-syncopate mb-6"
+            className="text-lg sm:text-2xl md:text-4xl font-syncopate mb-4 sm:mb-6"
           >
             Pronto para a próxima fase do seu negócio?
           </motion.h2>
@@ -371,7 +369,7 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg text-gray-300 mb-8"
+            className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-8"
           >
             Vamos conversar sobre como podemos acelerar seu crescimento de verdade.
           </motion.p>
@@ -381,20 +379,20 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col items-center gap-4"
+            className="flex flex-col items-center gap-2 sm:gap-4"
           >
             <button className="bg-gradient-to-r from-[#6b2c84] via-[#98356b] to-[#ec6429] text-black px-8 py-4 rounded-full hover:opacity-90 transition-all flex items-center gap-2 text-lg font-medium shadow-lg shadow-[#6b2c84]/20">
               <Calendar className="w-5 h-5" />
               Agende uma conversa rápida
             </button>
-            <span className="text-sm text-gray-400">É grátis e sem compromisso</span>
+            <span className="text-xs sm:text-sm text-gray-400">É grátis e sem compromisso</span>
           </motion.div>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section
-        className="py-10 sm:py-16 md:py-32 px-2 sm:px-4 md:px-8 relative bg-responsive"
+        className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 relative bg-responsive"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80")',
         }}
