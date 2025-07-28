@@ -11,7 +11,7 @@ import AutomationService from './pages/services/AutomationService.tsx'
 import PositioningService from './pages/services/PositioningService.tsx'
 import Blog from './pages/blog/Blog.tsx'
 import BlogPost from './pages/blog/BlogPost.tsx'
-import DougDemarcoPage from './pages/DougDemarcoPage.tsx'
+import RhidonPage from './pages/RhidonPage.tsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/protocolo-dominio",
-    element: <DougDemarcoPage />,
+    element: <RhidonPage />,
   },
 ]);
 

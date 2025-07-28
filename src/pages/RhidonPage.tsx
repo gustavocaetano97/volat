@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Clock, Target, Zap, Brain, Users, DollarSign, CheckCircle, ArrowRight, Star, Play, MessageSquare, Calendar, Mail } from 'lucide-react';
 import Layout from '../components/Layout';
 
-const DougDemarcoPage = () => {
+const RhidonPage = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 15,
     hours: 7,
@@ -75,7 +75,7 @@ const DougDemarcoPage = () => {
   const features = [
     {
       icon: Brain,
-      title: "DOUG.EXE 3.0 — Seu mentor + braço direito digital",
+      title: "RHIDON.EXE 3.0 — Seu mentor + braço direito digital",
       description: "Ele te dá ideia, te responde, te corrige, te provoca, te ajuda a escrever, montar oferta, pensar campanha... É literalmente o cérebro que você usaria se já tivesse ganhando mais de R$ 500 mil por mês."
     },
     {
@@ -483,4 +483,4 @@ const DougDemarcoPage = () => {
   );
 };
 
-export default DougDemarcoPage;
+export default RhidonPage;

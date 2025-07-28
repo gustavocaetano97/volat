@@ -14,7 +14,7 @@ const Header = () => {
 
     window.addEventListener('scroll', handleScroll);
     document.body.classList.toggle('menu-open', isMenuOpen);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       document.body.classList.remove('menu-open');
@@ -22,10 +22,10 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const menuItems = [
-    { label: 'Processos', href: '/processos' },
+    { label: 'Processos', href: '#processos' },
     {
       label: 'Serviços',
-      href: '/servicos',
+      href: '#servicos',
       submenu: [
         { label: 'Automações', href: '/servicos/automacoes' },
         { label: 'Otimização', href: '/servicos/consultoria' },
@@ -37,8 +37,8 @@ const Header = () => {
         { label: 'Código do Domínio', href: '/protocolo-dominio' }
       ]
     },
-    { label: 'Benefícios', href: '/beneficios' },
-    { label: 'Blog', href: '/blog' }
+    { label: 'Benefícios', href: '#beneficios' },
+    { label: 'Blog', href: '#blog' }
   ];
 
   const menuVariants = {
@@ -61,18 +61,18 @@ const Header = () => {
   };
 
   return (
-    <header 
+    <header
       className={`fixed w-full z-50 transition-all duration-500 ${
         isScrolled ? 'py-2' : 'py-6'
       }`}
     >
       <div className="container mx-auto px-4">
-        <nav 
+        <nav
           className={`relative bg-black/50 backdrop-blur-sm rounded-full transition-all duration-500 ease-in-out ${
             isScrolled ? 'px-4 md:px-8 py-2 max-w-2xl mx-auto' : 'px-4 md:px-6 py-3'
           }`}
         >
-          <div 
+          <div
             className={`flex items-center transition-all duration-500 ease-in-out ${
               isScrolled ? 'justify-center gap-8 md:gap-12' : 'justify-between'
             }`}
@@ -88,7 +88,7 @@ const Header = () => {
                 <li key={item.label} className={item.submenu ? 'dropdown relative group' : ''}>
                   {item.submenu ? (
                     <>
-                      <a 
+                      <a
                         href={item.href}
                         className="text-sm lg:text-base text-white hover:text-brand-purple transition-colors flex items-center gap-1"
                       >
@@ -97,7 +97,7 @@ const Header = () => {
                       <ul className="submenu absolute left-0 top-full mt-2 bg-black/90 backdrop-blur-sm rounded-lg py-2 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                         {item.submenu.map((subItem) => (
                           <li key={subItem.label}>
-                            <Link 
+                            <Link
                               to={subItem.href}
                               className="text-sm text-white hover:text-brand-purple transition-colors block px-4 py-2"
                             >
@@ -108,7 +108,7 @@ const Header = () => {
                       </ul>
                     </>
                   ) : (
-                    <Link 
+                    <Link
                       to={item.href}
                       className="text-sm lg:text-base text-white hover:text-brand-purple transition-colors"
                     >
@@ -132,7 +132,7 @@ const Header = () => {
             </button>
 
             <div className={`hidden md:block transition-all duration-500 ${isScrolled ? 'scale-90' : ''}`}>
-              <button 
+              <button
                 className={`gradient-button rounded-full flex items-center gap-2 text-sm lg:text-base ${
                   isScrolled ? 'px-3 py-1.5' : 'px-4 py-2'
                 }`}
@@ -196,7 +196,7 @@ const Header = () => {
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
                   >
-                    <button 
+                    <button
                       className="w-full gradient-button rounded-full flex items-center justify-center gap-2 text-lg font-medium py-4 mt-4"
                     >
                       <Calendar className="w-5 h-5" />
