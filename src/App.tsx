@@ -189,7 +189,7 @@ function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0, delay: 0.2 }}
-            className="text-base sm:text-lg md:text-xl text-white mb-8 md:mb-20 font-space-grotesk px-4"
+            className="text-base sm:text-lg md:text-xl text-white mb-8 md:mb-16 font-space-grotesk px-8"
           >
             descubra oportunidades escondidas que multiplicam o faturamento da sua empresa
           </motion.p>
