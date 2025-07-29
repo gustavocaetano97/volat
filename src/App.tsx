@@ -206,7 +206,10 @@ function App() {
       </div>
       </div>
 
-      {/* Benefícios Section */}
+      {/* Interactive Tech Service Cards */}
+      <TechServiceCards />
+
+      {/* Benefícios Section - Timeline Vertical */}
       <section
         className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
         style={{
@@ -214,21 +217,36 @@ function App() {
         }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-3xl mx-auto relative z-10">
           <SectionHeader
             badge="BENEFÍCIOS"
             title="Resultados que você pode ver e sentir no bolso."
             subtitle="Veja o que acontece quando você trabalha com quem entende do assunto"
           />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
-            {benefitCards.map((card, index) => (
-              <BenefitCard
-                key={card.title}
-                {...card}
-                delay={index * 0.2}
-              />
-            ))}
+          <div className="relative flex flex-col gap-12 items-start">
+            {/* Linha vertical */}
+            <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-[#6b2c84] via-[#ec6429] to-transparent opacity-40 rounded-full"></div>
+            {benefitCards.map((card, idx) => {
+              const Icon = card.icon;
+              return (
+                <div key={card.title} className="relative flex items-center w-full">
+                  {/* Ícone e ponto da timeline */}
+                  <div className="flex flex-col items-center z-10">
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-[#6b2c84] via-[#98356b] to-[#ec6429] shadow-lg mb-2">
+                      <Icon className="w-7 h-7 text-white" />
+                    </div>
+                    {idx < benefitCards.length - 1 && (
+                      <div className="flex-1 w-1 bg-gradient-to-b from-[#6b2c84] to-[#ec6429] opacity-40"></div>
+                    )}
+                  </div>
+                  {/* Texto */}
+                  <div className="ml-8 bg-black/60 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-[#6b2c84]/20 flex-1">
+                    <h3 className="font-syncopate text-lg md:text-xl text-white font-bold mb-2 tracking-wide" style={{textShadow:'0 2px 12px #000'}}>{card.title}</h3>
+                    <p className="text-gray-200 text-base md:text-lg font-space-grotesk" style={{textShadow:'0 2px 12px #000'}}>{card.description}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -260,52 +278,66 @@ function App() {
         </div>
       </section>
 
-      {/* Interactive Tech Service Cards */}
-      <TechServiceCards />
-
-      {/* Serviços Section */}
+      {/* Serviços Section - Grid Alternado */}
       <section
-      className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 relative bg-responsive"
-      style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80")',
-      }}
+        className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 relative bg-responsive"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80")',
+        }}
       >
-      <div className="absolute inset-0 bg-black/80"></div>
-      <div className="max-w-7xl mx-auto relative z-10">
-        <SectionHeader
-        badge="SERVIÇOS"
-        title="Nossos Serviços"
-        subtitle="Crescimento real para quem quer sair do lugar. Cada empresa é única. Nossas soluções também são."
-        />
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
-        {serviceCards.slice(0, 3).map((card, index) => (
-          <ServiceCard
-          key={card.title}
-          {...card}
-          delay={index * 0.1}
+        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="max-w-5xl mx-auto relative z-10">
+          <SectionHeader
+            badge="SERVIÇOS"
+            title="Nossos Serviços"
+            subtitle="Crescimento real para quem quer sair do lugar. Cada empresa é única. Nossas soluções também são."
           />
-        ))}
+          <div className="flex flex-col gap-10">
+            {serviceCards.map((card, idx) => {
+              const Icon = card.icon;
+              const isEven = idx % 2 === 0;
+              // Alterna animações: 0=pulse, 1=rotate, 2=bounce
+              const animType = idx % 3;
+              let animateProps = {};
+              if (animType === 0) {
+                animateProps = {
+                  animate: { scale: [1, 1.15, 1] },
+                  transition: { repeat: Infinity, duration: 1.6, ease: 'easeInOut' }
+                };
+              } else if (animType === 1) {
+                animateProps = {
+                  animate: { rotate: [0, 10, -10, 0] },
+                  transition: { repeat: Infinity, duration: 2.2, ease: 'easeInOut' }
+                };
+              } else {
+                animateProps = {
+                  animate: { y: [0, -10, 0] },
+                  transition: { repeat: Infinity, duration: 1.4, ease: 'easeInOut' }
+                };
+              }
+              return (
+                <div key={card.title} className={`flex flex-col md:flex-row items-center ${isEven ? '' : 'md:flex-row-reverse'} gap-6 md:gap-12`}>
+                  {/* Ícone animado JS */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.7 }}
+                    whileInView={{ opacity: 0.7, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.7, delay: idx * 0.1 }}
+                    className="flex-shrink-0 flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-[#6b2c84] via-[#98356b] to-[#ec6429] shadow-lg"
+                    {...animateProps}
+                  >
+                    <Icon className="w-10 h-10 text-white" style={{ opacity: 0.7 }} />
+                  </motion.div>
+                  {/* Texto */}
+                  <div className="flex-1 bg-black/60 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-[#6b2c84]/20">
+                    <h3 className="font-syncopate text-xl md:text-2xl text-white font-bold mb-2 tracking-wide" style={{textShadow:'0 2px 12px #000'}}>{card.title}</h3>
+                    <p className="text-gray-200 text-base md:text-lg font-space-grotesk" style={{textShadow:'0 2px 12px #000'}}>{card.description}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-4 sm:mt-8">
-        {serviceCards.slice(3, 5).map((card, index) => (
-          <ServiceCard
-          key={card.title}
-          {...card}
-          delay={(index + 3) * 0.1}
-          />
-        ))}
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-4 sm:mt-8">
-        {serviceCards.slice(5).map((card, index) => (
-          <ServiceCard
-          key={card.title}
-          {...card}
-          delay={(index + 5) * 0.1}
-          />
-        ))}
-        </div>
-      </div>
       </section>
 
       {/* CTA Section */}
