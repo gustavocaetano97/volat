@@ -308,33 +308,6 @@ function App() {
       </div>
       </section>
 
-      {/* Benefícios Section */}
-      <section
-      className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
-      style={{
-        backgroundImage: 'url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80")',
-      }}
-      >
-      <div className="absolute inset-0 bg-black/80"></div>
-      <div className="max-w-7xl mx-auto relative z-10">
-        <SectionHeader
-        badge="BENEFÍCIOS"
-        title="Resultados que você pode ver e sentir no bolso."
-        subtitle="Veja o que acontece quando você trabalha com quem entende do assunto"
-        />
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
-        {benefitCards.map((card, index) => (
-          <BenefitCard
-          key={card.title}
-          {...card}
-          delay={index * 0.2}
-          />
-        ))}
-        </div>
-      </div>
-      </section>
-
       {/* CTA Section */}
       <section
       className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 relative bg-responsive"

@@ -14,10 +14,11 @@ const TechServiceCards = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-syncopate mb-6">
-            Soluções Tecnológicas Avançadas
+            Por que você precisa?
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Transforme seu negócio com nossas soluções tecnológicas inovadoras e personalizadas.
+            Seu negócio ainda não decolou no digital por estar
+            sem as ferramentas certas no lugar e na hora certa.
           </p>
         </motion.div>
 
@@ -59,12 +60,11 @@ const TechServiceCards = () => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-syncopate mb-4 text-white group-hover:text-[#6b2c84] transition-colors duration-300">
-              Process Automation
+              Baixo nível de sofisticação
             </h3>
 
             <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
-              Automatize processos repetitivos e libere sua equipe para focar em atividades estratégicas.
-              Sistemas inteligentes que aumentam a eficiência e reduzem erros operacionais.
+              Seu comercial nunca foi cuidado por quem de fato entende de tecnologia e negócios. Suas campanhas ainda não atingiram o alto padrão do mercado.
             </p>
 
             {/* Animated Background Elements */}
@@ -129,12 +129,11 @@ const TechServiceCards = () => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-syncopate mb-4 text-white group-hover:text-[#6b2c84] transition-colors duration-300">
-              Digital Positioning
+              Compromisso e Segurança
             </h3>
 
             <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
-              Posicione sua marca estrategicamente no ambiente digital. SEO avançado, marketing de conteúdo
-              e estratégias de visibilidade que colocam seu negócio no topo dos resultados.
+              Para ter resultado consistente você também precisa de consistência no compromisso com seu time e seus clientes. Porém, você nunca encontrou alguém que pudesse confiar.
             </p>
 
             {/* Animated Background Elements */}
@@ -199,11 +198,11 @@ const TechServiceCards = () => {
             </div>
 
             <h3 className="text-xl md:text-2xl font-syncopate mb-4 text-white group-hover:text-[#6b2c84] transition-colors duration-300">
-              Web & Mobile Development
+              Desconfiança no mercado atual
             </h3>
 
             <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">
-              Desenvolvimento de websites e aplicações modernas, responsivas e de alta performance.
+              Falta de desenvolvimento de campanhas, websites e aplicações modernas, responsivas e de alta performance.
               Soluções tecnológicas sob medida que impulsionam seu negócio no ambiente digital.
             </p>
 
