@@ -233,9 +233,6 @@ function App() {
         </div>
       </section>
 
-      {/* Interactive Tech Service Cards */}
-      <TechServiceCards />
-
       {/* Processo Section */}
       <section
         className="py-8 sm:py-12 md:py-24 px-2 sm:px-4 md:px-8 bg-black/50 relative bg-responsive"
@@ -262,6 +259,9 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Interactive Tech Service Cards */}
+      <TechServiceCards />
 
       {/* Serviços Section */}
       <section
