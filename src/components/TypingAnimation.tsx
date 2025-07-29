@@ -12,7 +12,7 @@ const WORDS = [
 ];
 
 const TYPING_SPEED = 80; // ms per letter
-const ERASING_SPEED = 35; // ms per letter
+const ERASING_SPEED = 30; // ms per letter
 const PAUSE_DURATION = 2000; // ms after word is fully typed
 
 const TypingAnimation: React.FC = () => {
@@ -53,7 +53,7 @@ const TypingAnimation: React.FC = () => {
     <h1
       style={{
         color: "white",
-        fontSize: "clamp(2rem, 6vw, 4rem)",
+        fontSize: "clamp(1.5rem, 5vw, 3rem)",
         fontWeight: 700,
         letterSpacing: "0.04em",
         whiteSpace: "pre",
