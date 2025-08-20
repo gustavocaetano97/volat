@@ -12,6 +12,7 @@ import PositioningService from './pages/services/PositioningService.tsx'
 import Blog from './pages/blog/Blog.tsx'
 import BlogPost from './pages/blog/BlogPost.tsx'
 import RhidonPage from './pages/RhidonPage.tsx'
+import BioPage from './pages/BioPage.tsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/protocolo-dominio",
     element: <RhidonPage />,
+  },
+  {
+    path: "/bio",
+    element: <BioPage />,
   },
 ]);
 
